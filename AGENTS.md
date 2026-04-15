@@ -21,35 +21,36 @@
 
 - 요구사항을 해석하고 작업 범위를 확정한다.
 - 구현 계획, 제약사항, 확인이 필요한 리스크를 정리한다.
-- `handoffs/planner_to_designer.md` 를 작성한다.
+- `handoffs/round_{ROUND_NO}/planner_to_designer.md` 를 작성한다.
 
 ### 2. designer (.codex/agents/designer.toml)
 
-- `handoffs/planner_to_designer.md` 를 입력으로 사용한다.
+- `handoffs/round_{ROUND_NO}/planner_to_designer.md` 를 입력으로 사용한다.
 - UX/UI 방향, 화면 구조, 컴포넌트 규칙, 표현 상세를 정리한다.
 - 구현자가 바로 사용할 수 있는 설계 지침으로 변환한다.
-- `handoffs/designer_to_developer.md` 를 작성한다.
+- `handoffs/round_{ROUND_NO}/designer_to_developer.md` 를 작성한다.
 
 ### 3. front-developer (.codex/agents/front-developer.toml) + back-developer (.codex/agents/back-developer.toml)
 
-- `handoffs/designer_to_developer.md` 를 입력으로 사용한다.
+- `handoffs/round_{ROUND_NO}/designer_to_developer.md` 를 입력으로 사용한다.
 - 실제 코드 변경을 수행한다.
 - front-developer , back-developer는 동시에 소환된다. Rest api 인터페이스가 명확한지 더블체크한 뒤, 두 에이전트를 동시에 소환해라.(중요))
 - 구현 내용, 남은 이슈, 테스트 포인트를 정리한다.
 - front,back 각각 frontend , backend 개별 디렉토리에서 작업한다.
-- `handoffs/front-developer_to_tester.md` 와 `handoffs/back-developer_to_tester.md` 를 작성한다.
+- `handoffs/round_{ROUND_NO}/front-developer_to_tester.md` 와 `handoffs/round_{ROUND_NO}/back-developer_to_tester.md` 를 작성한다.
 
 ### 4. tester (.codex/agents/tester.toml)
 
-- `handoffs/front-developer_to_tester.md` + `handoffs/back-developer_to_tester.md` 를 입력으로 사용한다.
+- `handoffs/round_{ROUND_NO}/front-developer_to_tester.md` + `handoffs/round_{ROUND_NO}/back-developer_to_tester.md` 를 입력으로 사용한다.
 - Playwright 기반 UI 테스트에 주력한다. 브라우저의 top~bottom까지 스크롤을 내리면서 사용자가 할 수 있는 모든 동작을 테스트해본다. 증적을 필수로 남겨야 한다.
 - 결과, 실패 내역, 추가 수정 필요 여부를 정리한다.
-- 최종 검증 보고서를 `handoffs/tester_report.md` 에 작성한다.
+- 최종 검증 보고서를 `handoffs/round_{ROUND_NO}/tester_report.md` 에 작성한다.
 
 ## 핸드오프 규칙
 
 - 모든 핸드오프 문서는 Markdown 파일로 작성한다.
-- 핸드오프 문서는 반드시 `handoffs/` 디렉터리에 둔다.
+- 핸드오프 문서는 반드시 `handoffs/round_{ROUND_NO}/` 디렉터리에 둔다.
+- 초기의 핸드오프 문서는 빈 템플릿이다.
 - 각 핸드오프 문서는 아래 항목을 포함한다.
   - 목적
   - 입력 문서 또는 참조 산출물
@@ -62,10 +63,10 @@
 ## 오케스트레이션 규칙
 
 - 상위 에이전트는 항상 `planner` 를 먼저 서브에이전트로 호출한다.
-- `planner` 완료 후 `handoffs/planner_to_designer.md` 확인 뒤 `designer` 를 호출한다.
-- `designer` 완료 후 `handoffs/designer_to_developer.md` 확인 뒤 `developer` 를 호출한다.
-- `front-developer` + `back-developer` 완료 후 `handoffs/developer_to_tester.md` 확인 뒤 `tester` 를 호출한다.
-- `tester` 완료 후 `handoffs/tester_report.md` 를 최종 결과로 취급한다.
+- `planner` 완료 후 `handoffs/round_{ROUND_NO}/planner_to_designer.md` 확인 뒤 `designer` 를 호출한다.
+- `designer` 완료 후 `handoffs/round_{ROUND_NO}/designer_to_developer.md` 확인 뒤 `developer` 를 호출한다.
+- `front-developer` + `back-developer` 완료 후 `handoffs/round_{ROUND_NO}/developer_to_tester.md` 확인 뒤 `tester` 를 호출한다.
+- `tester` 완료 후 `handoffs/round_{ROUND_NO}/tester_report.md` 를 최종 결과로 취급한다.
 
 ## 금지 사항
 
@@ -76,8 +77,8 @@
 
 ## 기본 디렉터리 및 파일
 
-- `handoffs/planner_to_designer.md`
-- `handoffs/designer_to_developer.md`
-- `handoffs/front-developer_to_tester.md`
-- `handoffs/back-developer_to_tester.md`
-- `handoffs/tester_report.md`
+- `handoffs/round_{ROUND_NO}/planner_to_designer.md`
+- `handoffs/round_{ROUND_NO}/designer_to_developer.md`
+- `handoffs/round_{ROUND_NO}/front-developer_to_tester.md`
+- `handoffs/round_{ROUND_NO}/back-developer_to_tester.md`
+- `handoffs/round_{ROUND_NO}/tester_report.md`
