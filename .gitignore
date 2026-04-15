@@ -1,0 +1,12 @@
+.DS_Store
+node_modules
+.next
+out
+dist
+coverage
+frontend/node_modules
+frontend/.next
+backend/target
+*.log
+.env
+.env.local
