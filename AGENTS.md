@@ -11,6 +11,10 @@
 - 다음 단계 에이전트는 이전 단계가 완료되기 전에는 호출하지 않는다.
 - 상위 오케스트레이터 에이전트는 각 단계 종료 후 산출물과 핸드오프 문서가 존재하는지 확인한 다음 다음 서브에이전트를 호출한다.
 
+## 기술 스택
+- backend : Kotlin/springboot/gradle/jpa/H2 database(필요시)
+- frontend : Next.js
+
 ## 단계별 책임
 
 ### 1. planner (.codex/agents/planner.toml)
