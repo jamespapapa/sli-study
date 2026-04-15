@@ -42,7 +42,7 @@
 ### 4. tester (.codex/agents/tester.toml)
 
 - `handoffs/front-developer_to_tester.md` + `handoffs/back-developer_to_tester.md` 를 입력으로 사용한다.
-- 테스트, 검증, 회귀 확인을 수행한다.
+- Playwright 기반 UI 테스트에 주력한다. 브라우저의 top~bottom까지 스크롤을 내리면서 사용자가 할 수 있는 모든 동작을 테스트해본다. 증적을 필수로 남겨야 한다.
 - 결과, 실패 내역, 추가 수정 필요 여부를 정리한다.
 - 최종 검증 보고서를 `handoffs/tester_report.md` 에 작성한다.
 
