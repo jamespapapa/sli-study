@@ -13,7 +13,7 @@
 
 ## 기술 스택
 - backend : Kotlin/springboot/gradle/jpa/H2 database(필요시)
-- frontend : Next.js
+- frontend : Next.js/Tailwind CSS
 
 ## 단계별 책임
 
