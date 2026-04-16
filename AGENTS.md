@@ -1,12 +1,12 @@
 # AGENTS.md
 
-이 레포는 기본적으로 4개의 서브에이전트를 순차 호출하는 구조를 사용한다.
+이 레포는 기본적으로 5개의 서브에이전트를 순차 호출하는 구조를 사용한다.
 
 ## 기본 원칙
 
 - 에이전트 구성은 현재 레포의 .codex/agents 하위에 있는 `planner`, `designer`, `front-developer`, `back-developer`, `tester` 5개로 고정한다.
 - 실행 순서는 항상 `planner -> designer -> front-developer + back-developer (병렬 실행) -> tester` 이다.
-- 병렬 호출은 금지한다.
+- 병렬 호출은 front-developer와 back-developer 외에는 금지한다.
 - 각 단계는 반드시 이전 단계의 핸드오프 문서를 읽고, 자신의 결과를 다음 단계용 핸드오프 문서로 작성한 뒤 종료한다.
 - 다음 단계 에이전트는 이전 단계가 완료되기 전에는 호출하지 않는다.
 - 상위 오케스트레이터 에이전트는 각 단계 종료 후 산출물과 핸드오프 문서가 존재하는지 확인한 다음 다음 서브에이전트를 호출한다.
