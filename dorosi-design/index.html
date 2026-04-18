@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>도로시 DOROSI — AX 에이전시 · We Build Magic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="hero.css">
+<link rel="stylesheet" href="sections.css">
+</head>
+<body>
+
+<div class="grid-bg"></div>
+<div class="noise"></div>
+
+<!-- ================ NAV ================ -->
+<nav class="nav">
+  <a href="#" class="nav-logo">
+    <span class="dot"></span>
+    <span>DOROSI</span>
+    <span class="mono" style="font-size:10px;color:var(--ink-dim);letter-spacing:0.2em;margin-left:8px">AX_AGENCY</span>
+  </a>
+  <div class="nav-menu">
+    <a href="#services">서비스</a>
+    <a href="#process">프로세스</a>
+    <a href="#portfolio">포트폴리오</a>
+    <a href="#team">팀</a>
+    <a href="#faq">FAQ</a>
+  </div>
+  <a href="#cta" class="nav-cta">프로젝트 의뢰 →</a>
+</nav>
+
+<!-- ================ HERO ================ -->
+<section class="hero" data-screen-label="01 Hero">
+  <canvas id="heroCanvas" class="hero-canvas"></canvas>
+
+  <div class="hero-panel">
+    <div class="hero-panel-head">
+      <span>◉ DOROSI.OS v4.12</span>
+      <div class="dots"><span></span><span></span><span></span></div>
+    </div>
+    <div class="hero-panel-row"><span class="k">STATUS</span><span class="v ok">● ONLINE</span></div>
+    <div class="hero-panel-row"><span class="k">NEURONS</span><span class="v">80 / 80</span></div>
+    <div class="hero-panel-row"><span class="k">LATENCY</span><span class="v">12ms</span></div>
+    <div class="hero-panel-row"><span class="k">PROJECTS_RUNNING</span><span class="v">24</span></div>
+    <div class="hero-panel-row"><span class="k">AX_INDEX</span><span class="v ok">+342%</span></div>
+    <div style="margin-top:14px;padding-top:10px;border-top:1px solid var(--line);color:var(--ink-ghost);font-size:10px">
+      $ initialize dorosi.agent --magic<br>
+      <span style="color:var(--accent)">› ready.</span>
+    </div>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-meta">
+      <div class="coord">
+        <span>37.5665°N · 126.9780°E</span>
+        <span>SEOUL / SF</span>
+      </div>
+      <div class="live">
+        <span class="dot"></span>
+        <span id="liveTime">00:00:00 UTC</span>
+      </div>
+    </div>
+
+    <h1>
+      <span class="glitch" data-text="당신의 비즈니스를">당신의 비즈니스를</span><br>
+      <span class="accent">마법처럼</span> <span class="outline">변화시킵니다</span>
+    </h1>
+
+    <p class="hero-sub">
+      <strong>도로시(Dorosi)</strong>는 웹제작 · AI 자동화 · 마케팅 · 컨설팅을 한 번에 책임지는 <strong>종합 AX 에이전시</strong>입니다. 삼성, 네카라쿠배, 실리콘밸리 출신이 직접 당신의 오즈로 가는 길을 설계합니다.
+    </p>
+
+    <div class="hero-ctas">
+      <a href="#cta" class="btn">
+        <span>프로젝트 시작하기</span>
+        <span class="btn-arrow">→</span>
+      </a>
+      <a href="#portfolio" class="btn ghost">
+        <span>작업물 보기</span>
+        <span class="btn-arrow">↗</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="num"><span data-target="120" data-suffix="+">0+</span></div>
+      <div class="lbl">완료 프로젝트</div>
+    </div>
+    <div class="hero-stat">
+      <div class="num"><span data-target="342" data-suffix="%">0%</span></div>
+      <div class="lbl">평균 성과 상승</div>
+    </div>
+    <div class="hero-stat">
+      <div class="num"><span data-target="98" data-suffix="%">0%</span></div>
+      <div class="lbl">재계약율</div>
+    </div>
+  </div>
+
+  <div class="scroll-cue">
+    <span class="line"></span>
+    <span>Scroll · 길을 따라가세요</span>
+  </div>
+</section>
+
+<!-- ================ TICKER ================ -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span>
+      웹제작 <span class="sep">◆</span> AI 자동화 <span class="sep">◆</span> 퍼포먼스 마케팅 <span class="sep">◆</span> 브랜드 컨설팅 <span class="sep">◆</span>
+      AI 에이전트 <span class="sep">◆</span> 랜딩페이지 <span class="sep">◆</span> 사내 자동화 <span class="sep">◆</span> 프로덕트 디자인 <span class="sep">◆</span>
+      웹제작 <span class="sep">◆</span> AI 자동화 <span class="sep">◆</span> 퍼포먼스 마케팅 <span class="sep">◆</span> 브랜드 컨설팅 <span class="sep">◆</span>
+      AI 에이전트 <span class="sep">◆</span> 랜딩페이지 <span class="sep">◆</span> 사내 자동화 <span class="sep">◆</span> 프로덕트 디자인 <span class="sep">◆</span>
+    </span>
+  </div>
+</div>
+
+<!-- ================ MANIFESTO ================ -->
+<section class="manifesto" data-screen-label="02 Manifesto">
+  <div class="container">
+    <div class="eyebrow reveal">◉ Manifesto — 02</div>
+    <p class="manifesto-text reveal" style="margin-top:24px">
+      같은 홈페이지를 만들어도 <span class="hl acc">도로시는 다르다.</span><br>
+      우리는 코드를 쓰지 않는다. <span class="hl">마법을 짠다.</span><br>
+      픽셀 하나, 인터랙션 한 프레임마다<br>
+      당신의 비즈니스가 <span class="hl">다음 단계로 도약할 이유</span>를 심어둔다.
+    </p>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ================ SERVICES ================ -->
+<section class="services" id="services" data-screen-label="03 Services">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>네 개의 도구.<br>하나의 <span style="color:var(--accent);font-style:italic">여정.</span></h2>
+      <div class="meta">
+        <div class="eyebrow" style="margin-bottom:12px">◉ Services — 03</div>
+        도로시는 마법사의 지팡이가 아닙니다.<br>
+        당신의 비즈니스가 필요한 <span style="color:var(--ink)">모든 도구</span>입니다.
+      </div>
+    </div>
+
+    <div class="services-grid reveal">
+      <!-- 1. WEB -->
+      <div class="service">
+        <div class="service-num">S/01</div>
+        <svg class="service-icon" viewBox="0 0 64 64" fill="none">
+          <rect x="4" y="10" width="56" height="44" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+          <rect x="4" y="10" width="56" height="8" fill="var(--accent)" opacity="0.2"/>
+          <circle cx="10" cy="14" r="1.5" fill="var(--accent)"/>
+          <circle cx="16" cy="14" r="1.5" fill="var(--accent)"/>
+          <circle cx="22" cy="14" r="1.5" fill="var(--accent)"/>
+          <path d="M10 26L24 40L10 54" stroke="var(--accent)" stroke-width="1.5"/>
+          <path d="M28 46H54" stroke="var(--accent)" stroke-width="1.5"/>
+        </svg>
+        <h3>웹 제작
+          <span class="en">// WEB CRAFT</span>
+        </h3>
+        <p>
+          한번 본 사람이 다시 찾아오는 웹사이트. 고성능 랜딩부터 복잡한 SaaS 대시보드까지,
+          디자인·프론트엔드·백엔드를 통합 설계합니다. <strong style="color:var(--ink)">화려함과 성능은 타협하지 않습니다.</strong>
+        </p>
+        <div class="service-tags">
+          <span class="service-tag">Next.js</span>
+          <span class="service-tag">Three.js</span>
+          <span class="service-tag">Framer</span>
+          <span class="service-tag">Webflow</span>
+          <span class="service-tag">Headless CMS</span>
+        </div>
+        <span class="service-arrow">↗</span>
+      </div>
+
+      <!-- 2. AI -->
+      <div class="service">
+        <div class="service-num">S/02</div>
+        <svg class="service-icon" viewBox="0 0 64 64" fill="none">
+          <circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+          <circle cx="32" cy="32" r="4" fill="var(--accent)"/>
+          <circle cx="16" cy="20" r="3" fill="var(--accent)" opacity="0.7"/>
+          <circle cx="48" cy="20" r="3" fill="var(--accent)" opacity="0.7"/>
+          <circle cx="14" cy="44" r="3" fill="var(--accent)" opacity="0.7"/>
+          <circle cx="50" cy="44" r="3" fill="var(--accent)" opacity="0.7"/>
+          <line x1="32" y1="32" x2="16" y2="20" stroke="var(--accent)" stroke-width="0.8"/>
+          <line x1="32" y1="32" x2="48" y2="20" stroke="var(--accent)" stroke-width="0.8"/>
+          <line x1="32" y1="32" x2="14" y2="44" stroke="var(--accent)" stroke-width="0.8"/>
+          <line x1="32" y1="32" x2="50" y2="44" stroke="var(--accent)" stroke-width="0.8"/>
+        </svg>
+        <h3>AI 자동화
+          <span class="en">// AI AUTOMATION</span>
+        </h3>
+        <p>
+          반복되는 모든 것을 AI 에이전트로 치환합니다. CS 응대, 문서 분류, 데이터 리서치,
+          이메일/슬랙 응답까지 — 사람이 <strong style="color:var(--ink)">중요한 일에만 집중</strong>하도록 설계합니다.
+        </p>
+        <div class="service-tags">
+          <span class="service-tag">GPT / Claude</span>
+          <span class="service-tag">RAG</span>
+          <span class="service-tag">n8n</span>
+          <span class="service-tag">Make</span>
+          <span class="service-tag">Zapier</span>
+          <span class="service-tag">Custom Agents</span>
+        </div>
+        <span class="service-arrow">↗</span>
+      </div>
+
+      <!-- 3. MARKETING -->
+      <div class="service">
+        <div class="service-num">S/03</div>
+        <svg class="service-icon" viewBox="0 0 64 64" fill="none">
+          <path d="M8 44L20 30L32 36L56 12" stroke="var(--accent)" stroke-width="2"/>
+          <circle cx="56" cy="12" r="4" fill="var(--accent)"/>
+          <path d="M44 12H56V24" stroke="var(--accent)" stroke-width="1.5" opacity="0.5"/>
+          <rect x="4" y="52" width="6" height="6" fill="currentColor" opacity="0.4"/>
+          <rect x="14" y="48" width="6" height="10" fill="currentColor" opacity="0.4"/>
+          <rect x="24" y="44" width="6" height="14" fill="var(--accent)" opacity="0.6"/>
+          <rect x="34" y="38" width="6" height="20" fill="var(--accent)" opacity="0.7"/>
+          <rect x="44" y="32" width="6" height="26" fill="var(--accent)" opacity="0.8"/>
+          <rect x="54" y="26" width="6" height="32" fill="var(--accent)"/>
+        </svg>
+        <h3>마케팅 대행
+          <span class="en">// GROWTH MARKETING</span>
+        </h3>
+        <p>
+          트렌드에 기대지 않습니다. 데이터와 브랜드 서사를 엮어 <strong style="color:var(--ink)">확장 가능한 그로스 엔진</strong>을 만듭니다.
+          퍼포먼스 광고, SEO, 콘텐츠, 인플루언서 — 필요한 채널만 정확하게.
+        </p>
+        <div class="service-tags">
+          <span class="service-tag">Meta Ads</span>
+          <span class="service-tag">Google Ads</span>
+          <span class="service-tag">SEO</span>
+          <span class="service-tag">CRM</span>
+          <span class="service-tag">GA4</span>
+          <span class="service-tag">Mixpanel</span>
+        </div>
+        <span class="service-arrow">↗</span>
+      </div>
+
+      <!-- 4. CONSULTING -->
+      <div class="service">
+        <div class="service-num">S/04</div>
+        <svg class="service-icon" viewBox="0 0 64 64" fill="none">
+          <path d="M32 8L40 28H56L44 40L48 56L32 46L16 56L20 40L8 28H24L32 8Z" stroke="var(--accent)" stroke-width="1.5"/>
+          <circle cx="32" cy="32" r="6" fill="var(--accent)" opacity="0.3"/>
+          <circle cx="32" cy="32" r="2" fill="var(--accent)"/>
+        </svg>
+        <h3>AX 컨설팅
+          <span class="en">// STRATEGIC CONSULTING</span>
+        </h3>
+        <p>
+          "AI를 어떻게 도입해야 할지 모르겠어요" — 거기서부터 함께 시작합니다.
+          업무 프로세스 진단부터 <strong style="color:var(--ink)">전사 AI 전환 로드맵</strong>까지, 실행까지 책임지는 컨설팅.
+        </p>
+        <div class="service-tags">
+          <span class="service-tag">AI Strategy</span>
+          <span class="service-tag">Workflow Audit</span>
+          <span class="service-tag">Team Training</span>
+          <span class="service-tag">ROI Analysis</span>
+        </div>
+        <span class="service-arrow">↗</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ================ DIFFERENTIATOR ================ -->
+<section class="diff" data-screen-label="04 Why Dorothy">
+  <div class="container">
+    <div class="diff-banner reveal">
+      <div class="eyebrow" style="margin-bottom:24px">◉ Why Dorothy — 04</div>
+      <h2>
+        <span class="strike">그냥 외주</span><br>
+        <span class="acc">도로시는 다르다.</span>
+      </h2>
+      <p class="sub">같은 예산, 같은 기간, 같은 요구사항. 결과물이 왜 완전히 다른지 보여드립니다.</p>
+    </div>
+
+    <div class="diff-grid reveal">
+      <div class="diff-item">
+        <div class="num">01</div>
+        <h4>삼성 · 네카라쿠배 · 실리콘밸리 출신이 <span style="color:var(--accent)">직접</span> 작업</h4>
+        <p>인턴에게 맡기지 않습니다. 당신의 프로젝트는 처음부터 끝까지 시니어가 키보드를 잡습니다.</p>
+      </div>
+      <div class="diff-item">
+        <div class="num">02</div>
+        <h4>하나의 계약으로 <span style="color:var(--accent)">네 개의 전문 팀</span></h4>
+        <p>웹, AI, 마케팅, 컨설팅 — 각자 다른 업체를 찾아다닐 필요 없이 도로시 한 팀이 끝까지 책임집니다.</p>
+      </div>
+      <div class="diff-item">
+        <div class="num">03</div>
+        <h4>받는 순간 <span style="color:var(--accent)">감탄</span>하는 디테일</h4>
+        <p>화려한 히어로, 섬세한 마이크로인터랙션, 빠른 성능. 포트폴리오에 넣고 싶은 수준으로 마감합니다.</p>
+      </div>
+      <div class="diff-item">
+        <div class="num">04</div>
+        <h4>납품 후가 아니라 <span style="color:var(--accent)">납품부터 시작</span></h4>
+        <p>런칭이 끝이 아닙니다. 실제 수치가 오를 때까지 마케팅·자동화로 함께 뛰는 파트너입니다.</p>
+      </div>
+      <div class="diff-item">
+        <div class="num">05</div>
+        <h4>모든 제작물에 <span style="color:var(--accent)">AI 네이티브</span> 내장</h4>
+        <p>챗봇을 얹는 게 아니라 처음부터 AI로 돌아가도록 설계. 1년 뒤 시대에 뒤처지지 않는 구조.</p>
+      </div>
+      <div class="diff-item">
+        <div class="num">06</div>
+        <h4>실패한 프로젝트는 <span style="color:var(--accent)">전액 환불</span></h4>
+        <p>KPI를 같이 설정하고, 합의된 목표에 도달하지 못하면 책임집니다. 그래서 함부로 안 맡습니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================ PROCESS ================ -->
+<section class="process" id="process" data-screen-label="05 Process">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>오즈로 가는<br><span style="color:var(--accent);font-style:italic">네 단계의 여정.</span></h2>
+      <div class="meta">
+        <div class="eyebrow" style="margin-bottom:12px">◉ Process — 05</div>
+        평균 <span style="color:var(--accent);font-family:var(--f-mono)">6주</span> 안에 MVP,<br>
+        <span style="color:var(--accent);font-family:var(--f-mono)">12주</span> 안에 풀 런치.
+      </div>
+    </div>
+
+    <div class="process-track reveal">
+      <div class="process-step">
+        <div class="step-num"><span class="current">01</span> / 04</div>
+        <canvas class="step-viz" data-mini="14"></canvas>
+        <span class="en">Discover</span>
+        <h4>진단 · 설계</h4>
+        <p>비즈니스 목표, 현재 병목, 경쟁 구도를 해부합니다. 단순한 미팅이 아니라 내부 워크숍으로 진행.</p>
+        <div class="duration">◷ 1~2주</div>
+      </div>
+      <div class="process-step">
+        <div class="step-num">01 / <span class="current">02</span> / 04</div>
+        <canvas class="step-viz" data-mini="18"></canvas>
+        <span class="en">Craft</span>
+        <h4>설계 · 제작</h4>
+        <p>디자인, 개발, AI 엔진까지 병렬로 진행. 매주 금요일 라이브 데모로 진척을 확인합니다.</p>
+        <div class="duration">◷ 3~8주</div>
+      </div>
+      <div class="process-step">
+        <div class="step-num">01 / 02 / <span class="current">03</span> / 04</div>
+        <canvas class="step-viz" data-mini="16"></canvas>
+        <span class="en">Launch</span>
+        <h4>런칭 · 점화</h4>
+        <p>오픈과 동시에 마케팅 캠페인을 가동. 초기 유저 행동 데이터를 실시간으로 분석합니다.</p>
+        <div class="duration">◷ 1~2주</div>
+      </div>
+      <div class="process-step">
+        <div class="step-num">01 / 02 / 03 / <span class="current">04</span></div>
+        <canvas class="step-viz" data-mini="20"></canvas>
+        <span class="en">Grow</span>
+        <h4>성장 · 확장</h4>
+        <p>데이터 기반으로 끊임없이 튜닝. 성과가 증명되면 다음 채널, 다음 프로덕트로 확장합니다.</p>
+        <div class="duration">◷ 지속</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ================ PORTFOLIO ================ -->
+<section class="portfolio" id="portfolio" data-screen-label="06 Portfolio">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>마법은 결과로<br><span style="color:var(--accent);font-style:italic">증명됩니다.</span></h2>
+      <div class="meta">
+        <div class="eyebrow" style="margin-bottom:12px">◉ Portfolio — 06</div>
+        120개 프로젝트 중 공개 가능한<br>선별된 <span style="color:var(--ink)">6개 케이스</span>.
+      </div>
+    </div>
+
+    <div class="portfolio-grid reveal">
+      <div class="pf-card big" style="background:linear-gradient(135deg, rgba(0,229,255,0.08), rgba(59,130,255,0.04));">
+        <canvas class="pf-viz" data-mini="22"></canvas>
+        <div class="pf-meta">
+          <span>2025 · FINTECH</span>
+          <span class="tag">Web + AI</span>
+        </div>
+        <div class="pf-content">
+          <div class="client">NOVA CAPITAL</div>
+          <h3>AI 자산관리 대시보드 리디자인</h3>
+          <p class="dim" style="font-size:14px">3초 이상 걸리던 리포트 생성이 0.4초. GPT-4 기반 자동 브리핑 엔진 탑재.</p>
+          <div class="metric">
+            <div><div class="m-num">+412%</div><div class="m-lbl">리포트 생성 속도</div></div>
+            <div><div class="m-num">+68%</div><div class="m-lbl">유저 리텐션</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pf-card med" style="background:linear-gradient(135deg, rgba(255,59,229,0.06), rgba(59,130,255,0.04));">
+        <canvas class="pf-viz" data-mini="16"></canvas>
+        <div class="pf-meta">
+          <span>2025 · D2C</span>
+          <span class="tag">Marketing</span>
+        </div>
+        <div class="pf-content">
+          <div class="client">OROR BEAUTY</div>
+          <h3>풀퍼널 퍼포먼스 마케팅</h3>
+          <p class="dim" style="font-size:14px">CAC 63% 절감, ROAS 480% 달성. 인플루언서 · Meta · 리타겟팅 통합 운영.</p>
+          <div class="metric">
+            <div><div class="m-num">4.8x</div><div class="m-lbl">ROAS</div></div>
+            <div><div class="m-num">-63%</div><div class="m-lbl">CAC</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pf-card sm">
+        <canvas class="pf-viz" data-mini="12"></canvas>
+        <div class="pf-meta">
+          <span>2024 · B2B SAAS</span>
+          <span class="tag">AI Agent</span>
+        </div>
+        <div class="pf-content">
+          <div class="client">HELIX LABS</div>
+          <h3>CS 자동화 에이전트</h3>
+          <div class="metric">
+            <div><div class="m-num">92%</div><div class="m-lbl">자동 해결률</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pf-card sm">
+        <canvas class="pf-viz" data-mini="12"></canvas>
+        <div class="pf-meta">
+          <span>2025 · MEDIA</span>
+          <span class="tag">Web Craft</span>
+        </div>
+        <div class="pf-content">
+          <div class="client">STUDIO ALEPH</div>
+          <h3>인터랙티브 브랜드 사이트</h3>
+          <div class="metric">
+            <div><div class="m-num">02:48</div><div class="m-lbl">평균 체류시간</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pf-card sm">
+        <canvas class="pf-viz" data-mini="12"></canvas>
+        <div class="pf-meta">
+          <span>2024 · HEALTHCARE</span>
+          <span class="tag">Consulting</span>
+        </div>
+        <div class="pf-content">
+          <div class="client">CURA HEALTH</div>
+          <h3>전사 AI 전환 컨설팅</h3>
+          <div class="metric">
+            <div><div class="m-num">-38%</div><div class="m-lbl">운영 비용</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pf-card full" style="background:linear-gradient(135deg, rgba(0,229,255,0.05), transparent);">
+        <canvas class="pf-viz" data-mini="30"></canvas>
+        <div class="pf-meta">
+          <span>2025 · EDUCATION</span>
+          <span class="tag">Web + AI + Marketing</span>
+        </div>
+        <div class="pf-content">
+          <div class="client">LUMEN ACADEMY</div>
+          <h3>0에서 월 1만 유저까지 — 풀스택 런치</h3>
+          <p class="dim" style="font-size:14px;max-width:640px">
+            브랜드 · 웹사이트 · AI 튜터 · 퍼포먼스 마케팅까지. 3개월 만에 아무것도 없던 교육 스타트업을 월간 활성 유저 1만 명 서비스로 만들었습니다.
+          </p>
+          <div class="metric">
+            <div><div class="m-num">10,240</div><div class="m-lbl">MAU · 3개월</div></div>
+            <div><div class="m-num">+892%</div><div class="m-lbl">유기 트래픽</div></div>
+            <div><div class="m-num">84일</div><div class="m-lbl">0→런치</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================ LOGOS ================ -->
+<div class="logos reveal">
+  <div class="container">
+    <div class="eyebrow" style="text-align:center;display:block;margin-bottom:32px">◉ Trusted by</div>
+    <div class="logos-row">
+      <span class="logo-item">NOVA CAPITAL</span>
+      <span class="logo-item">Oror.</span>
+      <span class="logo-item">HELIX▲</span>
+      <span class="logo-item">◈ ALEPH</span>
+      <span class="logo-item">CURA+</span>
+      <span class="logo-item">lumen/</span>
+      <span class="logo-item">PLATO.AI</span>
+      <span class="logo-item">ZEPHYR◉</span>
+    </div>
+  </div>
+</div>
+
+<!-- ================ TESTIMONIALS ================ -->
+<section class="testimonials" data-screen-label="07 Testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>우리 고객은<br><span style="color:var(--accent);font-style:italic">이렇게 말합니다.</span></h2>
+      <div class="meta">
+        <div class="eyebrow" style="margin-bottom:12px">◉ Testimonials — 07</div>
+        NPS 87점,<br>재계약율 <span style="color:var(--ink)">98%</span>.
+      </div>
+    </div>
+
+    <div class="testi-grid reveal">
+      <div class="testi">
+        <span class="quote-mark">"</span>
+        <blockquote>
+          "다른 외주사는 '요구사항 주세요'로 시작했는데, 도로시는 '문제가 뭐예요'로 시작했어요. 3주 만에 저희도 몰랐던 병목을 찾아냈습니다."
+        </blockquote>
+        <div class="author">
+          <div class="avatar">KJ</div>
+          <div class="author-info">
+            <div class="name">김지훈 대표</div>
+            <div class="role">NOVA CAPITAL / CEO</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi">
+        <span class="quote-mark">"</span>
+        <blockquote>
+          "랜딩페이지 하나 만들었을 뿐인데 전환율이 3배 올랐습니다. '디자인 예쁜 거랑 돈 버는 거랑 다르다'는 편견을 깨줬어요."
+        </blockquote>
+        <div class="author">
+          <div class="avatar">SL</div>
+          <div class="author-info">
+            <div class="name">이서연 이사</div>
+            <div class="role">OROR BEAUTY / Growth Lead</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi">
+        <span class="quote-mark">"</span>
+        <blockquote>
+          "AI 에이전트 도입 후, CS팀 4명이 하던 일을 1명이 담당합니다. 나머지 3명은 더 창의적인 일로 옮겼고요. 말 그대로 변화였습니다."
+        </blockquote>
+        <div class="author">
+          <div class="avatar">PM</div>
+          <div class="author-info">
+            <div class="name">박민호 CTO</div>
+            <div class="role">HELIX LABS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ================ TEAM ================ -->
+<section class="team" id="team" data-screen-label="08 Team">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>당신의 여정에<br><span style="color:var(--accent);font-style:italic">함께할 사람들.</span></h2>
+      <div class="meta">
+        <div class="eyebrow" style="margin-bottom:12px">◉ Team — 08</div>
+        14명의 풀타임,<br>서울 · 샌프란시스코 · 도쿄.
+      </div>
+    </div>
+
+    <div class="team-intro reveal">
+      <p>
+        도로시는 <span class="hl">삼성, 네이버, 카카오, 라인, 쿠팡, 토스, 배민</span> 출신과<br>
+        실리콘밸리 Meta · Airbnb · Figma 출신이 만든 <span class="acc">소규모 최정예 팀</span>입니다.
+      </p>
+      <p>
+        포트폴리오 사이트 하나에 <span class="hl">시니어 디자이너 1명, 시니어 엔지니어 2명</span>이 붙습니다.<br>
+        이게 도로시의 가격이 비싸지 않은 이유고, 결과물이 다른 이유입니다.
+      </p>
+    </div>
+
+    <div class="team-list reveal">
+      <div class="team-member">
+        <div class="portrait">D</div>
+        <div class="name">김도현</div>
+        <div class="role">Founder · CEO</div>
+        <div class="prev"><span>Prev.</span>Samsung Research · Meta SF</div>
+      </div>
+      <div class="team-member">
+        <div class="portrait">S</div>
+        <div class="name">이수아</div>
+        <div class="role">Head of Design</div>
+        <div class="prev"><span>Prev.</span>Toss · Airbnb</div>
+      </div>
+      <div class="team-member">
+        <div class="portrait">J</div>
+        <div class="name">박재원</div>
+        <div class="role">AI Lead</div>
+        <div class="prev"><span>Prev.</span>Naver CLOVA · OpenAI partner</div>
+      </div>
+      <div class="team-member">
+        <div class="portrait">H</div>
+        <div class="name">정하린</div>
+        <div class="role">Head of Growth</div>
+        <div class="prev"><span>Prev.</span>Kakao · Coupang Eats</div>
+      </div>
+      <div class="team-member">
+        <div class="portrait">M</div>
+        <div class="name">최민석</div>
+        <div class="role">Principal Engineer</div>
+        <div class="prev"><span>Prev.</span>Line · Figma</div>
+      </div>
+      <div class="team-member">
+        <div class="portrait">Y</div>
+        <div class="name">윤예진</div>
+        <div class="role">Brand Strategist</div>
+        <div class="prev"><span>Prev.</span>Baemin · Woowa Bros.</div>
+      </div>
+      <div class="team-member">
+        <div class="portrait">T</div>
+        <div class="name">조태경</div>
+        <div class="role">Principal Designer</div>
+        <div class="prev"><span>Prev.</span>Naver · Stripe</div>
+      </div>
+      <div class="team-member">
+        <div class="portrait">+7</div>
+        <div class="name">그 외 7인</div>
+        <div class="role">Engineers · Designers</div>
+        <div class="prev"><span>Across</span>NAKALAKUBAE · SF · TOKYO</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================ FAQ ================ -->
+<section class="faq" id="faq" data-screen-label="09 FAQ">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>자주 묻는<br><span style="color:var(--accent);font-style:italic">질문들.</span></h2>
+      <div class="meta">
+        <div class="eyebrow" style="margin-bottom:12px">◉ FAQ — 09</div>
+        더 궁금한 게 있다면<br>직접 물어보세요 ↓
+      </div>
+    </div>
+
+    <div class="faq-list reveal">
+      <details class="faq-item">
+        <summary><span><span class="q-num">Q.01</span>예산이 어느 정도면 의뢰할 수 있나요?</span><span class="plus">+</span></summary>
+        <div class="answer">
+          프로젝트 규모에 따라 다르지만, 랜딩페이지 기준 1,500만 원부터, 풀 웹서비스는 5,000만 원부터 시작합니다.
+          AI 자동화/컨설팅은 월 구독(리테이너) 형태로 월 500만 원부터. 예산이 부족해도 편하게 상담 주세요 — 범위를 조정해서 시작할 수 있는 방법을 찾습니다.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary><span><span class="q-num">Q.02</span>제작 기간은 얼마나 걸리나요?</span><span class="plus">+</span></summary>
+        <div class="answer">
+          랜딩페이지는 평균 3~4주, 일반 웹사이트는 6~8주, 대규모 서비스는 12~16주입니다.
+          AI 자동화는 MVP 기준 2~4주 안에 가동합니다. 급한 프로젝트는 익스프레스 트랙으로 처리 가능합니다.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary><span><span class="q-num">Q.03</span>정말로 시니어가 직접 작업하나요?</span><span class="plus">+</span></summary>
+        <div class="answer">
+          네. 도로시는 인턴/주니어 인력 풀이 없습니다. 모든 팀원이 5년 이상 경력의 시니어이며, 계약서에 작업자 이름과 소속 출신을 명시합니다.
+          킥오프 미팅에서 실제 작업자를 만나보실 수 있습니다.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary><span><span class="q-num">Q.04</span>디자인만 / 개발만 의뢰해도 되나요?</span><span class="plus">+</span></summary>
+        <div class="answer">
+          물론입니다. 다만 도로시의 강점은 디자인-개발-AI-마케팅이 한 팀으로 움직일 때 나오는 시너지입니다.
+          단일 서비스 의뢰도 가능하지만, 상담 시 전체 여정 관점에서 제안해 드립니다.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary><span><span class="q-num">Q.05</span>납품 후 유지보수는 어떻게 되나요?</span><span class="plus">+</span></summary>
+        <div class="answer">
+          런칭 후 3개월은 무상 하자보증. 이후 월 유지보수 플랜(월 150만 원~)으로 기능 추가·성능 개선·마케팅 리포트를 지속합니다.
+          대부분의 고객사가 그로스 파트너십 형태로 1년 이상 함께 갑니다.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary><span><span class="q-num">Q.06</span>미팅은 어디서 하나요?</span><span class="plus">+</span></summary>
+        <div class="answer">
+          강남 사무실(역삼역 도보 3분) 또는 화상(Zoom/Google Meet)으로 진행합니다. 서울 외 지역은 주 1회 출장도 가능합니다.
+          실리콘밸리 파트너사와의 협업은 SF 오피스에서 조율합니다.
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================ CTA ================ -->
+<section class="cta" id="cta" data-screen-label="10 Contact">
+  <canvas class="cta-bg" id="ctaCanvas"></canvas>
+  <div class="container cta-inner">
+    <div class="eyebrow reveal" style="margin-bottom:32px">◉ Start the Journey</div>
+    <h2 class="reveal">
+      당신의 오즈는<br>
+      <span class="acc">어디에 있습니까?</span>
+    </h2>
+    <p class="reveal">
+      프로젝트 상담은 무료입니다. 폼을 보내주시면 48시간 내에 담당 디렉터가 직접 연락드립니다.
+    </p>
+
+    <form class="contact-form corners reveal" id="contactForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label>이름</label>
+          <input type="text" required placeholder="홍길동">
+        </div>
+        <div class="form-group">
+          <label>회사</label>
+          <input type="text" placeholder="Dorosi Corp.">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>이메일</label>
+          <input type="email" required placeholder="you@company.com">
+        </div>
+        <div class="form-group">
+          <label>예상 예산</label>
+          <select>
+            <option>1,500만원 이하</option>
+            <option>1,500 ~ 5,000만원</option>
+            <option>5,000만원 ~ 1억</option>
+            <option>1억 이상</option>
+            <option>월 구독 (리테이너)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group" style="margin-bottom:20px">
+        <label>관심있는 서비스 · 복수선택 가능</label>
+      </div>
+      <div class="service-pick">
+        <div class="service-pick-item on">웹 제작</div>
+        <div class="service-pick-item">AI 자동화</div>
+        <div class="service-pick-item">마케팅</div>
+        <div class="service-pick-item">컨설팅</div>
+        <div class="service-pick-item">브랜드 리뉴얼</div>
+      </div>
+
+      <div class="form-group" style="margin-bottom:24px">
+        <label>프로젝트 간단 소개</label>
+        <textarea placeholder="어떤 비즈니스이고, 무엇을 바꾸고 싶은지 편하게 적어주세요. 3~4줄이면 충분합니다."></textarea>
+      </div>
+
+      <button type="submit" class="btn form-submit">
+        <span>여정 시작하기</span>
+        <span class="btn-arrow">→</span>
+      </button>
+
+      <div style="margin-top:20px;font-family:var(--f-mono);font-size:10px;color:var(--ink-ghost);letter-spacing:0.12em;text-align:center">
+        ◉ 48시간 내 답변 보장 · 상담 무료 · NDA 제공
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ================ FOOTER ================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-big">Dorosi<span style="color:var(--accent)">.</span></div>
+        <p>당신의 비즈니스를 오즈로 데려가는 AX(AI Experience) 에이전시. 웹부터 AI, 마케팅, 컨설팅까지 — 한 팀으로.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <a href="#services">웹 제작</a>
+        <a href="#services">AI 자동화</a>
+        <a href="#services">마케팅</a>
+        <a href="#services">컨설팅</a>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="#team">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#">Careers</a>
+        <a href="#">Blog</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="mailto:hi@dorosi.agency">hi@dorosi.agency</a>
+        <a href="#">+82 2-000-0000</a>
+        <a href="#">서울 강남구 역삼동</a>
+        <a href="#">@dorosi.ax</a>
+      </div>
+    </div>
+
+    <div class="footer-huge">DOROSI</div>
+
+    <div class="footer-bottom">
+      <div>© 2026 Dorosi Agency. All pathways lead home.</div>
+      <div>◉ Made with magic · Seoul / SF</div>
+    </div>
+  </div>
+</footer>
+
+<!-- Speaker notes placeholder for anchor-aware tooling -->
+
+<script src="hero-variants.js"></script>
+<script src="scripts.js"></script>
+<script>
+  // Initialize mini canvas networks for process + portfolio
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('[data-mini]').forEach(cv => {
+      const count = parseInt(cv.dataset.mini, 10) || 14;
+      window.miniNetwork(cv, { count });
+    });
+    // CTA background
+    const ctaCanvas = document.getElementById('ctaCanvas');
+    if(ctaCanvas) window.miniNetwork(ctaCanvas, { count: 40 });
+  });
+</script>
+</body>
+</html>
